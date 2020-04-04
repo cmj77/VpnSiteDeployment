@@ -1,0 +1,55 @@
+{
+  "id": "/subscriptions/398a3ec8-8315-492f-b239-11b791c8829a/resourceGroups/vwan/providers/Microsoft.Resources/deployments/VpnSiteDeployment",
+  "name": "VpnSiteDeployment",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/398a3ec8-8315-492f-b239-11b791c8829a/resourceGroups/vwan/providers/Microsoft.Network/vpnSites/vpnsite",
+    "marketplaceItemId": ""
+  },
+  "properties": {
+    "templateHash": "12716595528300368530",
+    "parameters": {},
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2020-03-25T03:49:24.0453854Z",
+    "duration": "PT1.5252903S",
+    "correlationId": "074f1e70-a281-4a52-9fd9-869eabb38081",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "vpnSites",
+            "locations": [
+              "southcentralus"
+            ]
+          },
+          {
+            "resourceType": "vpnGateways",
+            "locations": [
+              "centralus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/398a3ec8-8315-492f-b239-11b791c8829a/resourceGroups/vwan/providers/Microsoft.Network/vpnSites/vpnsite",
+            "resourceType": "Microsoft.Network/vpnSites",
+            "resourceName": "vpnsite"
+          }
+        ],
+        "id": "/subscriptions/398a3ec8-8315-492f-b239-11b791c8829a/resourceGroups/vwan/providers/Microsoft.Network/vpnGateways/34277bedfa6f460189c6b92da5affe01-centralus-gw",
+        "resourceType": "Microsoft.Network/vpnGateways",
+        "resourceName": "34277bedfa6f460189c6b92da5affe01-centralus-gw"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
